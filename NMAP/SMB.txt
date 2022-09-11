@@ -1,0 +1,6 @@
+----------------------------------SMB Enumeration---------------------------------------
+Ports: 139, 445
+
+#Built in script to enumerate SMB shares
+
+nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.168.22
